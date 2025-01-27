@@ -1,0 +1,33 @@
+-- local AmmuItem = {
+--     {name = 'weapon_poolcue', label = 'Queue de Billard', price = 5000},
+--     {name = 'weapon_knuckle', label = 'Poing Américain', price = 5000},
+--     {name = 'weapon_pistol', label = 'Pistolet Simple', price = 300000}
+-- }
+
+-- function AmmuNation()
+--     local menu = RageUI.CreateMenu("", "Articles disponibles :")
+--     RageUI.Visible(menu, not RageUI.Visible(menu))
+--         while menu do
+--             Wait(3)
+--             RageUI.IsVisible(menu, function()
+--                 RageUI.Button('Boite de Munitions', '~g~Prix ~s~:  5000 $', {}, true, {
+--                     onSelected = function()
+--                         OpenMenuPaiement('clip', 5000)
+--                     end
+--                 })
+--             RageUI.Line()
+--             for k,v in pairs(AmmuItem) do
+--                 RageUI.Button(v.label, "~g~Armes ~s~: "..v.label.."\n~g~Prix ~s~: "..v.price, {}, true, {
+--                     onSelected = function()
+--                         OpenMenuPaiement(v.name, v.price)
+--                     end
+--                 })
+--             end
+--             end, function()
+--             end)
+
+--             if not RageUI.Visible(menu) then
+--                 menu = RMenu:DeleteType('menu', true)
+--             end
+--         end
+-- end

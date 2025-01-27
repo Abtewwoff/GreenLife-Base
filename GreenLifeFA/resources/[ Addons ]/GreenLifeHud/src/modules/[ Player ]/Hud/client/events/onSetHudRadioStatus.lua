@@ -1,0 +1,5 @@
+MOD_HUD:onReady(function()
+    AddEventHandler('GreenLife:Hud:SetHudRadioStatus', function(bool)
+        MOD_HUD.class:SetRadioStatus(bool)
+    end)
+end)

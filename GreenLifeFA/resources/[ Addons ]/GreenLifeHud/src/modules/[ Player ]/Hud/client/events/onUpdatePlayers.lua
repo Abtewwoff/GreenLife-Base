@@ -1,0 +1,6 @@
+MOD_HUD:onReady(function() 
+    RegisterNetEvent('GreenLife:Hud:UpdatePlayersCount')
+    AddEventHandler('GreenLife:Hud:UpdatePlayersCount', function(int)
+        MOD_HUD.class:UpdatePlayersConnected(int)
+    end)
+end)

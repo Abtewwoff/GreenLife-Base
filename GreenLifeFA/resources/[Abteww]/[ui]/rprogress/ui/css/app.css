@@ -1,0 +1,209 @@
+@import"https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700";
+@import"https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+body{
+    overflow:hidden;
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+code{
+    font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+:root{
+    --black: rgba(0, 0, 0, 1);
+    --black-40: rgba(0, 0, 0, .4);
+    --black-60: rgba(0, 0, 0, .6);
+    --black2-10: rgba(2, 2, 2, .1);
+    --black2-20: rgba(2, 2, 2, .2);
+    --black2-30: rgba(2, 2, 2, .3);
+    --black2-40: rgba(2, 2, 2, .4);
+    --black2-50: rgba(2, 2, 2, .5);
+    --black2-60: rgba(2, 2, 2, .6);
+    --black2-70: rgba(2, 2, 2, .7);
+    --black2-80: rgba(2, 2, 2, .8);
+    --black2-90: rgba(2, 2, 2, .9);
+    --black14-85: rgba(14, 14, 14, .85);
+    --noir-85: rgba(20, 20, 20, .851);
+    --grey: rgb(127, 127, 127);
+    --global-main-color-dark-50: rgba(32, 4, 51, .5);
+    --global-main-color: rgba(83, 18, 127, 1);
+    --global-main-color-10: rgba(83, 18, 127, .1);
+    --global-main-color-20: rgba(83, 18, 127, .2);
+    --global-main-color-30: rgba(83, 18, 127, .3);
+    --global-main-color-40: rgba(83, 18, 127, .4);
+    --global-main-color-50: rgba(83, 18, 127, .5);
+    --global-main-color-60: rgba(83, 18, 127, .6);
+    --global-main-color-70: rgba(83, 18, 127, .7);
+    --global-main-color-80: rgba(83, 18, 127, .8);
+    --global-main-color-90: rgba(83, 18, 127, .9);
+    --orange: #c96e06;
+    --light-orange: #b27935;
+    --green: #358e75;
+    --green2: #2bad6e;
+    --green-40: rgba(43, 173, 110, .4);
+    --red: #c33131;
+    --red-40: rgba(195, 49, 49, .4);
+    --blue: #3974c8;
+    --blue-40: #3975c83f;
+    --dark-blue: rgba(61, 112, 184, .6);
+    --dark-blue2: rgba(12, 56, 119, .6);
+    --white: rgba(255, 255, 255, 1);
+    --white-90: rgba(255, 255, 255, .9);
+    --white-80: rgba(255, 255, 255, .8);
+    --white-70: rgba(255, 255, 255, .7);
+    --white-50: rgba(255, 255, 255, .5);
+    --white-30: rgba(255, 255, 255, .3);
+    --degrade-violet: linear-gradient(360deg, rgba(83, 18, 127, .15) 0%, rgba(2, 2, 2, 0) 100%, rgba(2, 2, 2, 0) 100%);
+    --degrade-violet2: linear-gradient( 360deg, rgba(127, 18, 18, .15) 0%, rgba(2, 2, 2, 0) 100%, rgba(2, 2, 2, 0) 100% );
+    --degrade-violet-housebuilding: linear-gradient( 90deg, rgba(83, 18, 127, .36) 0%, rgba(2, 2, 2, .36) 0%, rgba(83, 18, 127, .31) 100% );
+    --degrade-rouge: linear-gradient(to right, rgba(2, 2, 2, .4), rgba(171, 27, 27, .31));
+    --degrade-bleu: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(36, 48, 62, .31) 100%);
+    --degrade-orange: linear-gradient(to right, rgba(2, 2, 2, .36) 0%, rgba(171, 96, 27, .31) 100%);
+    --degrade-vert: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(26, 102, 65, 031) 100%);
+    --degrade-brown: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(80, 49, 21, .31) 100%);
+    --degrade-cyan: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(0, 255, 255, .31) 100%);
+    --degrade-gray: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(128, 128, 128, .31) 100%);
+    --degrade-pink: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(255, 192, 203, .31) 100%);
+    --degrade-purple: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(128, 0, 128, .31) 100%);
+    --degrade-violet: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(238, 130, 238, .31) 100%);
+    --degrade-white: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(255, 255, 255, .31) 100%);
+    --degrade-yellow: linear-gradient(to right, rgba(2, 2, 2, .4) 0%, rgba(255, 193, 7, .31) 100%);
+    --font-family: "Poppins";
+    --font-family-bold: "Poppins-Bold";
+    --font-family-medium: "Poppins-Medium";
+    --font-family-regular: "Poppins-Regular"
+}
+html,body,.root,.App{
+    margin:0;
+    height:100%;
+    width:100%
+}
+body *,:after,:before{
+    -webkit-user-drag:none;
+    user-select:none;
+    margin:0;
+    padding:0;
+    font-family:var(--font-family),sans-serif;
+    box-sizing:border-box
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "ChaletComprime";
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.ui-dial {
+    position: absolute;
+    opacity: 1;
+    transform: scale(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-dial svg {
+    overflow: visible;
+    transform: rotate(-90deg);
+}
+
+.ui-dial svg circle {
+    fill: transparent;
+}
+
+.ui-dial svg circle:nth-child(2) {
+    z-index: 11;
+}
+
+.ui-dial svg circle:last-child {
+    z-index: 10;
+}
+
+.ui-dial.done, .linear-progress.done {
+    animation: done 200ms ease 0ms forwards;
+}
+
+.ui-dial .ui-indicator {
+    position: absolute;
+    color:var(--white-90);
+    font-size:1.7vh;
+    font-style:italic;
+    font-weight:600;
+    text-transform:uppercase
+}
+
+.ui-dial .ui-label {
+    position: absolute;
+    color: #fff;
+    min-width: 300px;
+    text-align: center;
+}
+
+.ui-dial.label-bottom .ui-label {
+    top: 100%;
+    margin: 20px 0;
+}
+
+.ui-dial.label-right .ui-label {
+    left: 100%;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.ui-dial.label-left .ui-label {
+    right: 100%;
+    margin: 0 20px;
+    text-align: right;
+}
+
+.ui-dial.label-top .ui-label {
+    bottom: 100%;
+    margin: 20px 0;
+}
+
+.linear-progress {
+    position: absolute;
+    isolation: isolate;
+}
+
+.linear-progress-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.linear-progress-fg {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: 0 50% 0;
+}
+
+.linear-progress-label {
+    font-size:1.5vh;
+    color:var(--white-90);
+    font-style:italic;
+    font-weight:600;
+    text-transform:uppercase
+}
+
+@keyframes done {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}

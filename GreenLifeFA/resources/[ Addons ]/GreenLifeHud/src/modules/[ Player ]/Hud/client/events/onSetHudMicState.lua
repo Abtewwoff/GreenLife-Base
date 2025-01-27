@@ -1,0 +1,5 @@
+MOD_HUD:onReady(function()
+    AddEventHandler('GreenLife:Hud:SetHudMicState', function(int)
+        MOD_HUD.class:SetMicState(int)
+    end)
+end)

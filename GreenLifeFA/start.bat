@@ -1,0 +1,1 @@
+.\cfx\FXServer.exe +exec server.cfg

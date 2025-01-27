@@ -1,0 +1,165 @@
+body,
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 0.783vw;
+    color: white;
+    background: none;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.main.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main.hide {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.main-container,
+.main-box-bg,
+.overflow-box-text,
+.overflow-box-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: none;
+    overflow: hidden;
+    display: flex;
+    overflow: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-box-bg {
+    position: absolute;
+    width: 19.01vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.833vw;
+    border: 0.052vw solid rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0.612);
+    right: 2.083vw;
+    bottom: 15.156vw;
+    border-radius: 1px;
+}
+
+.main-box-bg::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    height: 60%;
+    width: 3px;
+    background-color: rgba(30, 255, 0, 0.8);
+    transform: translateY(-50%);
+}
+
+.header {
+    font-family: "Black", sans-serif;
+    font-size: 1.5vw;
+}
+
+.overflow-box-text {
+    width: 12.292vw;
+}
+
+.box-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 18vw;
+    border: 0.052vw solid rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0.649);
+    padding-top: 0.417vw;
+    padding-bottom: 0.417vw;
+    margin-top: 0.300vw;
+}
+
+.box-text span:nth-child(1) {
+    width: 6vw;
+    font-size: 0.780vw;
+    font-family: "Black", sans-serif;
+    word-wrap: break-word;
+    margin-left: 0.210vw;
+}
+
+.box-text span:nth-child(2) {
+    text-align: end;
+    width: 9vw;
+    font-size: 0.750vw;
+    font-family: "Black", sans-serif;
+    margin-left: auto;
+    word-wrap: break-word;
+    margin-right: 0.300vw;
+}
+
+.progress-bar {
+    background-color: #444444;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    -moz-background-size: 40px 40px;
+    -o-background-size: 40px 40px;
+    background-size: 40px 40px;
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -moz-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+    margin: 3px 0 0 3px;
+    height: 37.2px;
+    width: 4px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 40px 0
+    }
+}
+
+@-moz-keyframes progress-bar-stripes {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 40px 0
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 40px 0
+    }
+}

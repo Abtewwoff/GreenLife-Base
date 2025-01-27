@@ -1,0 +1,5 @@
+MOD_HUD:onReady(function()
+    AddEventHandler('GreenLife:Hud:StateHud', function(bool)
+        MOD_HUD.class:SetHudVisible(bool)
+    end)
+end)
