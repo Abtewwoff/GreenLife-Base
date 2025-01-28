@@ -34,7 +34,7 @@ function KeyboardInput(TextEntry, ExampleText, MaxStringLength)
 	--	blockinput = false
 	--	return nil
 	--end
-    local Input = exports["Abteww"]:KeyboardInput(("Abteww:input:%s"):format(ExampleText), TextEntry);
+    local Input = exports["cfx-target"]:ShowSync('Veuillez rentrer la quantité', true, 600, "small_text")
     if (not Input) then
         return nil
     end
