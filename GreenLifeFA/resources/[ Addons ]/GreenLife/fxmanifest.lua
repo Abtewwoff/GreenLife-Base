@@ -128,10 +128,6 @@ client_scripts {
     'shared/clotheshop/src/utils.lua',
     'shared/clotheshop/data/client/*.lua',
     'shared/clotheshop/src/client/*.lua',
-    'modules/[Player]/Interact/*.lua',
-	'modules/[Player]/Interact/Menus/MainMenu.lua',
-	'modules/[Player]/Interact/Menus/SubMenus/**/*.lua',
-
 }
 
 server_scripts {
